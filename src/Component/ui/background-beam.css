@@ -1,0 +1,20 @@
+.background-beams-container {
+  --x-px: 0;
+  --y-px: 0;
+}
+
+.background-beams-gradient {
+  background: radial-gradient(circle at var(--x-px) var(--y-px), transparent 0%, rgba(0, 0, 0, 0.95) 70%);
+}
+
+.background-beams-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 750px;
+  width: 750px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgba(255, 94, 0, 0.2);
+  filter: blur(100px);
+}
